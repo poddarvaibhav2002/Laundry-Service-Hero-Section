@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    height: 10vh; /* Takes up 10% of the screen height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: 500;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 90vh; /* Takes up the remaining 90% of the screen height */
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #f4faff;
+    overflow: hidden; /* Ensures no scroll */
+}
+
+/* Left Content */
+.hero-left {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-left h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.hero-left h1 span {
+    color: #3498db;
+}
+
+.hero-left p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 500px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Right Content (Image) */
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-right img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
